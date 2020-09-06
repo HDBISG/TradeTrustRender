@@ -2,9 +2,6 @@ import { v2 } from "@govtechsg/decentralized-renderer-react-components";
 
 export interface CocTemplateCertificate extends v2.OpenAttestationDocument {
   name: string;
-  recipient: {
-    name: string;
-  };
   eco: {
       coDocno: string;
       coRefNo: string;
@@ -33,9 +30,6 @@ export interface CocTemplateCertificate extends v2.OpenAttestationDocument {
 
 export const cocTemplateCertificate: CocTemplateCertificate = {
   name: "OpenAttestation Tutorial Certificate of Completion",
-  recipient: {
-    name: "John Doe"
-  },
   issuers: [
     {
       name: "vCargo Cloud Pte Ltd"

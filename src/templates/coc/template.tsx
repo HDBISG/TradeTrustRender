@@ -42,7 +42,7 @@ export const CocTemplate: FunctionComponent<
     <tbody>
     <tr  >
     <td css={leftAlignTd}>
-    <p><strong>&nbsp;1 Exporter (Name &amp; Address)</strong></p>
+    <p><strong>1 Exporter (Name &amp; Address)</strong></p>
     <p> {document.eco.coExptrName}</p>
     <p> {document.eco.coExptrAddr1}</p>
     </td>
@@ -59,7 +59,7 @@ export const CocTemplate: FunctionComponent<
     </tr>
     <tr>
     <td  css={leftAlignTd} >
-    <p><strong>&nbsp;2 Consignee (Name, Full Address &amp; Country)</strong></p>
+    <p><strong>2 Consignee (Name, Full Address &amp; Country)</strong></p>
     <p> {document.eco.coConsignName}</p>
     <p> {document.eco.coConsignAddr1} <br/>
         {document.eco.coConsignAddr2} <br/>
@@ -70,7 +70,7 @@ export const CocTemplate: FunctionComponent<
 
     <tr>
     <td  css={leftAlignTd}   colSpan={2}>
-    <p>&nbsp;12 CERTIFICATION BY THE COMPETENT AUTHORITY</p>
+    <p>12 CERTIFICATION BY THE COMPETENT AUTHORITY</p>
     <p>We hereby certify that evidence has been produced to satisfy us 
 	that the goods specified above originate in/were processed in the
 	country shown in box 7. This Certificate is therefore issued and certified to the best of our knowledge
