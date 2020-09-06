@@ -23,6 +23,11 @@ const td = css`
   border: 1px solid grey; 
   border-collapse: collapse;
 `;
+const leftAlignTd = css`
+  border: 1px solid grey; 
+  border-collapse: collapse;
+  text-align: left;
+`;
 
 export const CocTemplate: FunctionComponent<
   TemplateProps<CocTemplateCertificate> & { className?: string }
@@ -32,28 +37,58 @@ export const CocTemplate: FunctionComponent<
 <table css={tableGroup} >
     <tbody>
     <tr  >
-    <td css={td}>
+    <td css={leftAlignTd}>
     <p><strong>&nbsp;1 Exporter (Name &amp; Address)</strong></p>
-    <p>PANASONIC LOGISTICS ASIA PACIFIC ON<br />BEHALF OF PANASONIC CORPORATION<br />1006, KADOMA, KADOMA CITY, OSAKA,<br />571-8501, JAPAN</p>
+    <p> {document.eco.coExptrName}</p>
+    <p> {document.eco.coExptrAddr1}</p>
     </td>
     <td  css={td} rowspan="2">
     <p><strong>REPUBLIC OF SINGAPORE</strong></p>
     <p>Trade Trust</p>
     <p><strong>CERTIFICATE OF ORIGIN</strong></p>
     <br/>
-    <p><strong>No. SICC - 88-20-002264</strong></p>
+    <p><strong>No. {document.eco.coRefNo}</strong></p>
     <br/>
     <p>NO UNAUTHORISED ADDITION/ALTERATION MAY BE MADE</p>
     <p>TO THIS CERTIFICATE ONCE IT IS ISSUED</p>
     </td>
     </tr>
     <tr>
-    <td >
+    <td  css={leftAlignTd} >
     <p><strong>&nbsp;2 Consignee (Name, Full Address &amp; Country)</strong></p>
-    <p>PANASONIC INDIA PVT.LTD.<br />6TH FLOOR SPIC BUILDING ANNEXE<br />NO.88, MOUNT ROAD, GUINDY CHENNAI<br />600032, INDIA</p>
+    <p> {document.eco.coConsignName}</p>
+    <p> {document.eco.coConsignAddr1} <br/>
+        {document.eco.coConsignAddr2} <br/>
+        {document.eco.coConsignAddr3} <br/>
+        {document.eco.coConsignAddr4}</p>    
     </td>
     </tr>
 
+    <tr>
+    <td  css={leftAlignTd}   colspan="2">
+    <p>&nbsp;12 CERTIFICATION BY THE COMPETENT AUTHORITY</p>
+    <p>We hereby certify that evidence has been produced to satisfy us 
+	that the goods specified above originate in/were processed in the
+	country shown in box 7. This Certificate is therefore issued and certified to the best of our knowledge
+	and belief to be correct and without any liability on our part.</p>
+	<table width='100%'>
+	<tr>
+		<td width='30%'>
+		</td>
+		<td width='30%' >
+            <img   width="200"
+                src = "https://smarteco.vcargocloud.com/store/template/resources/stamp_SICC_T.png" >
+        </img>
+		</td>
+		<td width='30%' >
+            <img  width="120"
+                src = "https://smarteco.vcargocloud.com/store/template/resources/stamp_ICC.png" >
+        </img>
+		</td>
+    </tr>
+    </table>
+    </td>
+    </tr>
     </tbody>
     </table>
     </div>

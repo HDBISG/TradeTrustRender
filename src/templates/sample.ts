@@ -58,7 +58,7 @@ export const cocTemplateCertificate: CocTemplateCertificate = {
       coAppliedBy: "SERENE NEO",
       coAppliedLocName: "TEAM LEADER",
       coAppliedDt: "2020-01-31",
-      coRemark:"MANUFACTURER’S NAME AND ADDRESS        PANASONIC SYSTEM NETWORKS MALAYSIA SDN BHD        PLO NO.1 KAWASAN PERINDUSTRIAN SENAI, KB NO.104, 81400 SENAI, JOHOR, MALAYSIA        NOTIFY PARTY:        PANASONIC INDIA PVT.LTD. ( CHENNAI        WAREHOUSE), NO.282/2 ,(A2+B2+C2)        NO 5/240, TIRUVALLUR HIGH RODA,        ALAMADI, PONNERI TALUK , CHENNAI -        600052 , INDIA";
+      coRemark:"MANUFACTURER’S NAME AND ADDRESS ",
   },
   $template: {
     name: "COC",
