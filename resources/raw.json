@@ -1,0 +1,23 @@
+{
+    "coDocno": "coDocno;",
+    "coRefNo": "coRefNo;",
+    "coExptrName": "coExptrName;",
+    "coExptrAddr1": "coExptrAddr1;",
+    "coExptrAddr2": "coExptrAddr2;",
+    "coExptrAddr3": "coExptrAddr3;",
+    "coExptrAddr4": "coExptrAddr4;",
+    "coConsignName": "coConsignName;",
+    "coConsignAddr1": "coConsignAddr1;",
+    "coConsignAddr2": "coConsignAddr2;",
+    "coConsignAddr3": "coConsignAddr3;",
+    "coConsignAddr4": "coConsignAddr4;",
+    "coDepartureType": "coDepartureType;",
+    "coDepartureDt": "coDepartureDt;",
+    "coVslFlt": "coVslFlt;",
+    "portOfDisch": "portOfDisch;",
+    "coFinaldestCtryCd": "coFinaldestCtryCd;",
+    "coOriginCtryDesc": "coOriginCtryDesc;",
+    "coAppliedBy": "coAppliedBy;",
+    "coAppliedLocName": "coAppliedLocName;",
+    "coAppliedDt": "coAppliedDt;"
+  }
