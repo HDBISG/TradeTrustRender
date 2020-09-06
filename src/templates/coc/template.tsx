@@ -29,6 +29,10 @@ const leftAlignTd = css`
   text-align: left;
 `;
 
+const td30Width = css`
+  width:30%;
+`;
+
 export const CocTemplate: FunctionComponent<
   TemplateProps<CocTemplateCertificate> & { className?: string }
 > = ({ document, className = "" }) => {
@@ -42,7 +46,7 @@ export const CocTemplate: FunctionComponent<
     <p> {document.eco.coExptrName}</p>
     <p> {document.eco.coExptrAddr1}</p>
     </td>
-    <td  css={td} rowspan="2">
+    <td  css={td} rowSpan={2}>
     <p><strong>REPUBLIC OF SINGAPORE</strong></p>
     <p>Trade Trust</p>
     <p><strong>CERTIFICATE OF ORIGIN</strong></p>
@@ -65,22 +69,22 @@ export const CocTemplate: FunctionComponent<
     </tr>
 
     <tr>
-    <td  css={leftAlignTd}   colspan="2">
+    <td  css={leftAlignTd}   colSpan={2}>
     <p>&nbsp;12 CERTIFICATION BY THE COMPETENT AUTHORITY</p>
     <p>We hereby certify that evidence has been produced to satisfy us 
 	that the goods specified above originate in/were processed in the
 	country shown in box 7. This Certificate is therefore issued and certified to the best of our knowledge
 	and belief to be correct and without any liability on our part.</p>
-	<table width='100%'>
+	<table  style={{width:'100%'}} >
 	<tr>
-		<td width='30%'>
+		<td style={{width:'30%'}} >
 		</td>
-		<td width='30%' >
+		<td style={{width:'30%'}} >
             <img   width="200"
                 src = "https://smarteco.vcargocloud.com/store/template/resources/stamp_SICC_T.png" >
         </img>
 		</td>
-		<td width='30%' >
+		<td style={{width:'30%'}} >
             <img  width="120"
                 src = "https://smarteco.vcargocloud.com/store/template/resources/stamp_ICC.png" >
         </img>
