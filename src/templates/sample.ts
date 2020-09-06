@@ -1,6 +1,6 @@
-import { Document } from "@govtechsg/decentralized-renderer-react-components";
+import { v2 } from "@govtechsg/decentralized-renderer-react-components";
 
-export interface CocTemplateCertificate extends Document {
+export interface CocTemplateCertificate extends v2.OpenAttestationDocument {
   name: string;
   recipient: {
     name: string;
@@ -36,6 +36,11 @@ export const cocTemplateCertificate: CocTemplateCertificate = {
   recipient: {
     name: "John Doe"
   },
+  issuers: [
+    {
+      name: "vCargo Cloud Pte Ltd"
+    }
+  ],
   eco: {
       coDocno: "",
       coRefNo: "SICC - 88-20-002264",
@@ -62,7 +67,7 @@ export const cocTemplateCertificate: CocTemplateCertificate = {
   },
   $template: {
     name: "COC",
-    type: "EMBEDDED_RENDERER",
+    type: v2.TemplateType.EmbeddedRenderer,
     url: "http://localhost:3000"
   }
 };
