@@ -43,15 +43,15 @@ export const CocTemplate: FunctionComponent<
     <tr  >
     <td css={leftAlignTd}>
     <p><strong>1 Exporter (Name &amp; Address)</strong></p>
-    <p> {document.eco.coExptrName}</p>
-    <p> {document.eco.coExptrAddr1}</p>
+    <p> {document.data.eco.coExptrName}</p>
+    <p> {document.data.eco.coExptrAddr1}</p>
     </td>
     <td  css={td} rowSpan={2}>
     <p><strong>REPUBLIC OF SINGAPORE</strong></p>
     <p>Trade Trust</p>
     <p><strong>CERTIFICATE OF ORIGIN</strong></p>
     <br/>
-    <p><strong>No. {document.eco.coRefNo}</strong></p>
+    <p><strong>No. {document.data.eco.coRefNo}</strong></p>
     <br/>
     <p>NO UNAUTHORISED ADDITION/ALTERATION MAY BE MADE</p>
     <p>TO THIS CERTIFICATE ONCE IT IS ISSUED</p>
@@ -60,11 +60,11 @@ export const CocTemplate: FunctionComponent<
     <tr>
     <td  css={leftAlignTd} >
     <p><strong>2 Consignee (Name, Full Address &amp; Country)</strong></p>
-    <p> {document.eco.coConsignName}</p>
-    <p> {document.eco.coConsignAddr1} <br/>
-        {document.eco.coConsignAddr2} <br/>
-        {document.eco.coConsignAddr3} <br/>
-        {document.eco.coConsignAddr4}</p>    
+    <p> {document.data.eco.coConsignName}</p>
+    <p> {document.data.eco.coConsignAddr1} <br/>
+        {document.data.eco.coConsignAddr2} <br/>
+        {document.data.eco.coConsignAddr3} <br/>
+        {document.data.eco.coConsignAddr4}</p>    
     </td>
     </tr>
 
