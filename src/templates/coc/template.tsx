@@ -78,9 +78,17 @@ export const CocTemplate: FunctionComponent<
       <span style={{float:'right'}}>{document.data.eco.coDepartureType}  &nbsp;&nbsp;&nbsp;&nbsp; 
         {document.data.eco.coDepartureDt} </span> </p>
     </td>
-    <td  css={td} rowSpan={5}>
-      <p><strong>REPUBLIC OF SINGAPORE</strong></p>
- 
+    <td  css={leftAlignTd} rowSpan={5}>
+      <p><strong>8 DECLARATION BY THE EXPORTER</strong></p>
+      <p> &nbsp;&nbsp; We hereby declare that the details and statements provided in this Certificate are true and correct.</p>
+      <table style={{width:'100%'}}>
+          <tr> <td> <strong>Signature: </strong></td> </tr>
+          <tr> <td> <strong>Name: </strong></td> <td> SERENE NEO </td></tr>
+          <tr> <td> <strong>Designation: </strong></td> <td> TEAM LEADER </td> </tr>
+          <tr> <td> <strong>Date: </strong> </td> <td> 31/01/2020 </td> 
+             <td style={{width:'30%'}}>  </td>
+             <td style={{width:'30%'}}> stamp </td> </tr>
+      </table>
     </td>
     </tr>
 
