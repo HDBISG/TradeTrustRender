@@ -22,11 +22,13 @@ const tableGroup = css`
 const td = css`
   border: 1px solid grey; 
   border-collapse: collapse;
+  padding: 0px 6px;
 `;
 const leftAlignTd = css`
   border: 1px solid grey; 
   border-collapse: collapse;
   text-align: left;
+  padding: 0px 6px;
 `;
 
 const td30Width = css`
@@ -40,6 +42,7 @@ export const CocTemplate: FunctionComponent<
     <div css={containerStyle} className={className} id="custom-template">
 <table css={tableGroup} >
     <tbody>
+
     <tr  >
     <td css={leftAlignTd}>
     <p><strong>1 Exporter (Name &amp; Address)</strong></p>
@@ -57,6 +60,7 @@ export const CocTemplate: FunctionComponent<
     <p>TO THIS CERTIFICATE ONCE IT IS ISSUED</p>
     </td>
     </tr>
+
     <tr>
     <td  css={leftAlignTd} >
     <p><strong>2 Consignee (Name, Full Address &amp; Country)</strong></p>
@@ -69,14 +73,24 @@ export const CocTemplate: FunctionComponent<
     </tr>
 
     <tr>
+    <td css={leftAlignTd} >
+    <p><span><strong >3 Departure Date</strong> 	</span>
+      <span style={{float:'right'}}>{document.data.eco.coDepartureType}  &nbsp;&nbsp;&nbsp;&nbsp; 
+        {document.data.eco.coDepartureDt} </span> </p>
+    <p> </p>
+    </td>
+    </tr>
+
+    <tr>
     <td  css={leftAlignTd}   colSpan={2}>
     <p>12 CERTIFICATION BY THE COMPETENT AUTHORITY</p>
-    <p>We hereby certify that evidence has been produced to satisfy us 
-	that the goods specified above originate in/were processed in the
-	country shown in box 7. This Certificate is therefore issued and certified to the best of our knowledge
-	and belief to be correct and without any liability on our part.</p>
-	<table  style={{width:'100%'}} >
-	<tr>
+      <p>We hereby certify that evidence has been produced to satisfy us 
+    that the goods specified above originate in/were processed in the
+    country shown in box 7. This Certificate is therefore issued and certified to the best of our knowledge
+    and belief to be correct and without any liability on our part.</p>
+    <table  style={{width:'100%'}} >
+    <tr>
+    
 		<td style={{width:'30%'}} >
 		</td>
 		<td style={{width:'30%'}} >
