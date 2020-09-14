@@ -77,7 +77,38 @@ export const CocTemplate: FunctionComponent<
     <p><span><strong >3 Departure Date</strong> 	</span>
       <span style={{float:'right'}}>{document.data.eco.coDepartureType}  &nbsp;&nbsp;&nbsp;&nbsp; 
         {document.data.eco.coDepartureDt} </span> </p>
-    <p> </p>
+    </td>
+    <td  css={td} rowSpan={5}>
+      <p><strong>REPUBLIC OF SINGAPORE</strong></p>
+ 
+    </td>
+    </tr>
+
+    <tr>
+    <td css={leftAlignTd} >
+    <p><span><strong >4 Vessel Name/Flight No.</strong> 	</span>
+      <span style={{float:'right'}}>{document.data.eco.coVslFlt}  </span> </p>
+    </td>
+    </tr>
+    
+    <tr>
+    <td css={leftAlignTd} >
+    <p><span><strong >5 Port of Discharge</strong> 	</span>
+      <span style={{float:'right'}}>{document.data.eco.coPortOfDisch}  </span> </p>
+    </td>
+    </tr>
+    
+    <tr>
+    <td css={leftAlignTd} >
+    <p><span><strong >6 Country of Final Destination</strong> 	</span>
+      <span style={{float:'right'}}>{document.data.eco.coFinaldestCtryCd}  </span> </p>
+    </td>
+    </tr>
+    
+    <tr>
+    <td css={leftAlignTd} >
+    <p><span><strong >7 Country of Origin of Goods</strong> 	</span>
+      <span style={{float:'right'}}>{document.data.eco.coOriginCtryDesc}  </span> </p>
     </td>
     </tr>
 
