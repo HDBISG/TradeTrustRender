@@ -1,6 +1,5 @@
-import { v2 } from "@govtechsg/decentralized-renderer-react-components";
 
-export interface CocTemplateCertificate extends v2.OpenAttestationDocument {
+export interface CocTemplateCertificateItem  {
   data: {
     eco: {
         coDocno: string;

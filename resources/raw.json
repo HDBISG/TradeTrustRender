@@ -19,5 +19,37 @@
     "coOriginCtryDesc": "coOriginCtryDesc;",
     "coAppliedBy": "coAppliedBy;",
     "coAppliedLocName": "coAppliedLocName;",
-    "coAppliedDt": "coAppliedDt;"
+    "coAppliedDt": "coAppliedDt;",
+    "TDocCoItems" :[
+      {
+        "TDocCoItemId" : {
+            "coiDocno":"",
+            "coiSeq":0
+        },
+        "coiRefNo": "",
+        "coiImpItemCd": "",
+        "coiDesc": "",
+        "coiMarks": "",
+        "coiInvNo": "",
+        "coiOriginCriterion": "",
+        "coiFobVal": "",
+        "coiCurrCd": "",
+        "coiWtGross": "",
+        "coiWtUom": "",
+        "coiQty": "",
+        "coiQtyUom": "",
+        "coiQtyUomCd": "",
+        "coiInvIssueDt": "",
+        "coiPkgCd": "",
+        "coiPkgCdListAgency": "",
+        "coiPkgCdListId": "",
+        "coiPkgCdListName": "",
+        "coiPkgQty": "",
+        "coiPkgUom": "",
+        "coiNetWt": "",
+        "coiNetWtUom": "",
+        "coiCtyCode": "",
+        "coiCtyDesc": ""
+      }
+    ]
   } 

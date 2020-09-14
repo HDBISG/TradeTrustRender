@@ -2,6 +2,7 @@ import React, { FunctionComponent } from "react";
 import { TemplateProps } from "@govtechsg/decentralized-renderer-react-components";
 import { css } from "@emotion/core";
 import { CocTemplateCertificate } from "../sample";
+import  TemplateItem  from "./templateItem";
 
 const containerStyle = css`
   background-color: #324353;
@@ -117,6 +118,20 @@ export const CocTemplate: FunctionComponent<
     <td css={leftAlignTd} >
     <p><span><strong >7 Country of Origin of Goods</strong> 	</span>
       <span style={{float:'right'}}>{document.data.eco.coOriginCtryDesc}  </span> </p>
+    </td>
+    </tr>
+    <tr>
+    <td colSpan={2}>
+      <table style={{width:'100%'}} >
+          <tr>
+            <td style={{width:'20%'}} ></td>
+            <td style={{width:'50%'}} ></td>
+            <td style={{width:'30%'}} ></td>
+          </tr>
+        {document.data.eco.TDocCoItems.map(item => (
+          <TemplateItem coiDesc={item.coiDesc} coiQty={item.coiQty} coiQtyUom={item.coiQtyUom}/>
+        ))}
+      </table>
     </td>
     </tr>
 
