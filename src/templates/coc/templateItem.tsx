@@ -17,9 +17,9 @@ const leftAlignTd = css`
 export default function renderTDocCoItems( tDocCoItems:TDocCoItems ) {
   return (
         <tr>
+          <td></td>
           <td  css={leftAlignTd} >{tDocCoItems.coiDesc}</td>
-          <td>{tDocCoItems.coiQty}</td>
-          <td>{tDocCoItems.coiQtyUom}</td>
+          <td  css={leftAlignTd}>{tDocCoItems.coiQty} {tDocCoItems.coiQtyUom}</td>
         </tr>
   );
 }

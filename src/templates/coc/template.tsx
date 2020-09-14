@@ -76,12 +76,12 @@ export const CocTemplate: FunctionComponent<
     <tr>
     <td css={leftAlignTd} >
     <p><span><strong >3 Departure Date</strong> 	</span>
-      <span style={{float:'right'}}>{document.data.eco.coDepartureType}  &nbsp;&nbsp;&nbsp;&nbsp; 
-        {document.data.eco.coDepartureDt} </span> </p>
+      <span  style={{float:'right'}} ><span>{document.data.eco.coDepartureType} </span>
+        <span style={{marginLeft:'10'}}> {document.data.eco.coDepartureDt} </span> </span> </p>
     </td>
     <td  css={leftAlignTd} rowSpan={5}>
       <p><strong>8 DECLARATION BY THE EXPORTER</strong></p>
-      <p> &nbsp;&nbsp; We hereby declare that the details and statements provided in this Certificate are true and correct.</p>
+      <p>  We hereby declare that the details and statements provided in this Certificate are true and correct.</p>
       <table style={{width:'100%'}}>
           <tr> <td> <strong>Signature: </strong></td> </tr>
           <tr> <td> <strong>Name: </strong></td> <td> SERENE NEO </td></tr>
@@ -124,9 +124,9 @@ export const CocTemplate: FunctionComponent<
     <td colSpan={2}>
       <table style={{width:'100%'}} >
           <tr>
-            <td style={{width:'20%'}} ></td>
-            <td style={{width:'50%'}} ></td>
-            <td style={{width:'30%'}} ></td>
+            <td style={{width:'20%',textAlign:'left'}} > <p><strong > 9 Marks &amp; Numbers</strong> </p> </td>
+            <td style={{width:'50%',textAlign:'left'}} >  <p><strong > 10 No. &amp; Kind of Packages Description of Goods </strong> </p>  </td>
+            <td style={{width:'30%',textAlign:'left'}} >  <p><strong > 11 Quantity &amp; Unit</strong> </p>  </td>
           </tr>
         {document.data.eco.TDocCoItems.map(item => (
           <TemplateItem coiDesc={item.coiDesc} coiQty={item.coiQty} coiQtyUom={item.coiQtyUom}/>
